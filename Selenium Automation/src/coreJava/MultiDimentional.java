@@ -1,6 +1,8 @@
 package coreJava;
 
+import java.util.Arrays;
 import java.util.Iterator;
+import java.util.List;
 
 public class MultiDimentional {
 
@@ -18,7 +20,6 @@ public class MultiDimentional {
 		
 		int b[][] = {{1,2,3},{4,5,6},{7,8,9}};
 		System.out.println(b[1][1]);
-		
 		
 		for(int row =0;row < 2;row++) {
 			
