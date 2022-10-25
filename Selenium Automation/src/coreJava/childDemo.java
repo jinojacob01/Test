@@ -3,6 +3,13 @@ package coreJava;
 public class childDemo extends parentDemo{
 	
 	int a = 5;
+	String text = "outside";
+	
+	public void thisEx() {
+		String text = "Inside";
+		System.out.println(text);
+		System.out.println(this.text);
+	}
 	
 	public childDemo() {
 		
@@ -13,7 +20,7 @@ public class childDemo extends parentDemo{
 	public void getData() {
 
 //		System.out.println(super.a);
-		System.out.println(a);
+		System.out.println("getData " +a);
 //		super.getData();
 		
 	}
@@ -22,6 +29,7 @@ public class childDemo extends parentDemo{
 		// TODO Auto-generated method stub
 		childDemo ob = new childDemo();
 		ob.getData();
+		ob.thisEx();
 	
 
 	}
